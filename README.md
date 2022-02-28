@@ -32,26 +32,27 @@ Run mutation tests:
 * ```yarn mutation```
 
 Run linter check: 
-* ```yarn link```
+* ```yarn lint```
 
 Install husky (pre-commits): 
 * ```yarn prepare```
 
 ## :steam_locomotive: Network Description Structure
 
-A network is described by a string with n lines, where the first line contains an integer ```S``` that defines the number of station in the network. The following ```S``` lines contains the name and color (optional) of the ```n-th``` station, the available colors are ```Verde``` and ```Rojo```. The next line contains an integer ```L``` that defines the number of lines in the network, and the next ```L``` lines contains the details of each network line. A network line is a string composed by a set of lines joined by a ```-```.
+A network is described by a string with N lines, where the first line contains an integer ```S``` that defines the number of stations in the network. The following ```S``` lines contain the name and the color (optional) of the ```n-th``` station, the available colors are ```Verde``` and ```Rojo```. The next line contains an integer ```L``` that defines the number of routes in the network, and the next ```L``` lines contain a string with a sequence of stations joined by a ```-``` that defines the ```n-th``` network route.
 
 ### :blue_book: Format
 ```
 S
-A
-B Rojo
-C Verde
+Station1
+Station2 color
+Station3 color
 ...
+StationS
 L
-A-B
-B-C
-C-A
+Station1-Station2
+Station2-Station3-Station4-Station1
+Station3-StationS
 ...
 ```
 
