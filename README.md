@@ -13,6 +13,7 @@ Desafío técnico para postular a [Buda.com](https://www.buda.com/) :tada:
 - Set the source and target stations in the start and end fields
 - Select the subway color
 - Press the blue button
+- The shortest path will be marked as blue in the graph at the right side of the website
 
 ## :memo: Scripts
 
